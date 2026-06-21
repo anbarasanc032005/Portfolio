@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anbarasan C — Frontend Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Particles.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PARTICLE BACKGROUND -->
+  <div id="particles-js"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">AC<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Anbarasan C</h1>
+      <div class="hero-role">
+        <span id="typed-text"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-tagline">
+        B.E. Computer Science student building clean, fast web experiences
+        and data-driven solutions from Tamil Nadu, India.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="resume.pdf" download class="btn btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/anbu003" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/anbarasanc" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="mailto:anbarasanc032005@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div data-aos="fade-up">
+        <p class="section-eyebrow">Who I Am</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="about-text glass-card">
+          <p>
+            I'm a third-year Computer Science &amp; Engineering student at P.S.R Engineering College, Sivakasi,
+            with a current CGPA of 7.6. My focus sits at the intersection of frontend development and
+            data analytics — I enjoy crafting responsive interfaces as much as digging into dashboards
+            and business insights.
+          </p>
+          <p>
+            Through internships at Portalam and Aram Analytics, I've gone from writing my first
+            Bootstrap layout to building real-world Power BI reports. I care deeply about clean code,
+            strong visual hierarchy, and experiences that work on every screen size.
+          </p>
+          <p>
+            When I'm not coding, I'm exploring cloud fundamentals (Azure), attending technical
+            seminars, and looking for the next team hackathon to join.
+          </p>
+          <div class="about-meta">
+            <div class="meta-item">
+              <span class="meta-value">2023–2027</span>
+              <span class="meta-label">B.E. CSE</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-value">7.6</span>
+              <span class="meta-label">CGPA</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-value">2</span>
+              <span class="meta-label">Internships</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-value">5+</span>
+              <span class="meta-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-edu glass-card" data-aos="fade-up" data-aos-delay="200">
+          <h3>Education</h3>
+          <div class="edu-item">
+            <div class="edu-icon">🎓</div>
+            <div>
+              <strong>B.E. Computer Science Engineering</strong>
+              <span>P.S.R Engineering College, Sivakasi</span>
+              <span class="edu-year">Sep 2023 – May 2027 &nbsp;·&nbsp; CGPA 7.6</span>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-icon">📘</div>
+            <div>
+              <strong>Higher Secondary Certificate (HSC)</strong>
+              <span>PACM Boys Higher Secondary School, Rajapalayam</span>
+              <span class="edu-year">2022 &nbsp;·&nbsp; 72%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div data-aos="fade-up">
+        <p class="section-eyebrow">What I Work With</p>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="skill-icon">⚡</div>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Bootstrap</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+
+        <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="skill-icon">🐍</div>
+          <h3>Programming</h3>
+          <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Data Structures</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+
+        <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="skill-icon">📊</div>
+          <h3>Data & Analytics</h3>
+          <ul>
+            <li>Microsoft Excel</li>
+            <li>Power BI</li>
+            <li>Data Cleaning</li>
+            <li>Dashboard Design</li>
+          </ul>
+        </div>
+
+        <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="skill-icon">🛠</div>
+          <h3>Tools & Cloud</h3>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>VS Code</li>
+            <li>Microsoft Azure</li>
+            <li>Jupyter Notebook</li>
+          </ul>
+        </div>
+
+        <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="320">
+          <div class="skill-icon">🤝</div>
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Analytical Thinking</li>
+            <li>Team Collaboration</li>
+            <li>Communication</li>
+            <li>Attention to Detail</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div data-aos="fade-up">
+        <p class="section-eyebrow">What I've Built</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-header">
+            <div class="project-icon">☕</div>
+            <div class="project-links">
+              <a href="https://github.com/anbarasanc" target="_blank" rel="noopener" class="project-link-btn" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3>Cafe Management System</h3>
+          <p>
+            A responsive web interface for managing cafe operations — menu display, order handling,
+            and customer navigation — designed for seamless cross-device experience.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="project-date">Jun 2025</div>
+        </div>
+
+        <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="project-header">
+            <div class="project-icon">🚗</div>
+            <div class="project-links">
+              <a href="https://github.com/anbarasanc" target="_blank" rel="noopener" class="project-link-btn" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3>Smart Parking System</h3>
+          <p>
+            An IoT-integrated solution for real-time parking slot monitoring. Sensor data feeds
+            directly into a web interface, giving drivers live slot availability at a glance.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">IoT</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="project-date">Dec 2025</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div data-aos="fade-up">
+        <p class="section-eyebrow">Where I've Worked</p>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Data Analyst Intern</h3>
+                <span class="timeline-company">Aram Analytics</span>
+              </div>
+              <span class="timeline-date">Nov 2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Analysed datasets and built interactive dashboards in Excel and Power BI</li>
+              <li>Generated business insight reports to support data-driven decision-making</li>
+              <li>Performed data cleaning, processing, and basic statistical interpretation</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Data Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Frontend Developer Intern</h3>
+                <span class="timeline-company">Portalam</span>
+              </div>
+              <span class="timeline-date">Jan 2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Built the college website's frontend using HTML, CSS, JavaScript, and Bootstrap</li>
+              <li>Implemented navigation menus, page layouts, and interactive UI components</li>
+              <li>Ensured responsive behaviour across mobile, tablet, and desktop screen sizes</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div data-aos="fade-up">
+        <p class="section-eyebrow">Credentials</p>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="cert-grid">
+
+        <div class="cert-card glass-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="cert-badge">☁️</div>
+          <div class="cert-info">
+            <h4>Azure Data Fundamentals</h4>
+            <span>Microsoft &nbsp;·&nbsp; Sep 2022</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="cert-badge">🌊</div>
+          <div class="cert-info">
+            <h4>Stream Processing Fundamentals</h4>
+            <span>Microsoft &nbsp;·&nbsp; Sep 2022</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="cert-badge">🐍</div>
+          <div class="cert-info">
+            <h4>Python Basic Fundamentals</h4>
+            <span>Guvi &nbsp;·&nbsp; Oct 2022</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="cert-badge">🤖</div>
+          <div class="cert-info">
+            <h4>AI for SEO</h4>
+            <span>Coursiv &nbsp;·&nbsp; Aug 2025</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="cert-badge">🚀</div>
+          <div class="cert-info">
+            <h4>AI for Work: Future-Proof Your Career</h4>
+            <span>Udemy &nbsp;·&nbsp; Apr 2026</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS ========== -->
+  <section class="section section-alt" id="achievements">
+    <div class="container">
+      <div data-aos="fade-up">
+        <p class="section-eyebrow">Recognition</p>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="ach-grid">
+
+        <div class="ach-card glass-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="ach-trophy">🥇</div>
+          <div>
+            <h4>1st Prize — Meme Time</h4>
+            <p>Netrix'25, KPR Institute of Engineering and Technology</p>
+            <span class="ach-date">Feb 2025</span>
+          </div>
+        </div>
+
+        <div class="ach-card glass-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="ach-trophy">💡</div>
+          <div>
+            <h4>Hackathon Participant</h4>
+            <p>Netrix'25, KPR Institute of Engineering and Technology</p>
+            <span class="ach-date">Feb 2025</span>
+          </div>
+        </div>
+
+        <div class="ach-card glass-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="ach-trophy">🎤</div>
+          <div>
+            <h4>Tech Seminar Contributor</h4>
+            <p>Active participant in technical seminars and knowledge-sharing sessions</p>
+            <span class="ach-date">Oct 2025</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div data-aos="fade-up">
+        <p class="section-eyebrow">Let's Talk</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-sub">
+          Whether you have an internship opportunity, a project idea, or just want to say hi —
+          my inbox is open.
+        </p>
+      </div>
+      <div class="contact-grid" data-aos="fade-up" data-aos-delay="100">
+        <a href="mailto:anbarasanc032005@gmail.com" class="contact-card glass-card">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">anbarasanc032005@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/anbu003" target="_blank" rel="noopener" class="contact-card glass-card">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/anbu003</span>
+        </a>
+        <a href="https://github.com/anbarasanc" target="_blank" rel="noopener" class="contact-card glass-card">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </div>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/anbarasanc</span>
+        </a>
+        <a href="tel:+918098149927" class="contact-card glass-card">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.07a16 16 0 0 0 6 6l1.27-.88a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+91 8098149927</span>
+        </a>
+      </div>
+      <div class="contact-cta" data-aos="fade-up" data-aos-delay="200">
+        <a href="mailto:anbarasanc032005@gmail.com" class="btn btn-primary btn-large">Say Hello →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built by <strong>Anbarasan C</strong></p>
+      <p class="footer-sub">© 2025 · Chennai, Tamil Nadu</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
